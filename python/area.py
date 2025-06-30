@@ -1,0 +1,5 @@
+π = float(3.14159)
+R = float(input("Leitor de Raio:"))
+raio = (R * R)
+area = (π * raio)
+print("A=", "{:.4f}".format(area),sep="")

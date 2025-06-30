@@ -1,0 +1,5 @@
+notas = input().split()
+N, X = map(float, notas)
+inicio_proporcao = (100 * X)
+final = int(inicio_proporcao / N)
+print(final)

@@ -1,0 +1,6 @@
+salario = float(input("Valor atual:"))
+reajuste = float(input("Reajuste:"))
+porcent = ((reajuste * salario) /(100))
+calc = (porcent + salario)
+print("Atual:","{:.2f}".format(salario)) #adiciona 2 casas decimais à direita (0)
+print("Novo:","{:.2f}".format(calc)) #adiciona 2 casas decimais à direita (0)

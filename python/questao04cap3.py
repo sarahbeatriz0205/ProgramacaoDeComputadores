@@ -1,0 +1,6 @@
+num_txt = input()
+num1 = int(num_txt)
+num_txt2 = input()
+num2 = int(num_txt2)
+soma = (num1 + num2)
+print (soma)
