@@ -1,10 +1,13 @@
 num_caixas = int(input()) #número de caixas
 conteudo_caixas = []
-saldo_inicial = 100 #início do saldo = 100sbecs
+saldo = 100 #início do saldo = 100sbecs
+saldo_atual = 100
 
 for i in range(0, num_caixas): #intervalo entre 0 e num_caixas - 1
-    lista = conteudo_caixas.append(int(input())) #aidiciona a qtd de valores estabalecidos pelo intervalo (num_caixas, na teoria)
-    if conteudo_caixas[i] >= 0: #se o índice que corresponde ao "i" for maior ou igual à 0
-        saldo_inicial = saldo_inicial + conteudo_caixas[i] 
+    conteudo_caixas.append(int(input())) #adiciona a qtd de valores estabalecidos pelo intervalo (num_caixas, na teoria)
+    saldo_atual = saldo_atual + conteudo_caixas[i]
 
-print(saldo_inicial)
+    if saldo_atual >= saldo: #se isso não for verdade, ele não conta
+        saldo = saldo_atual
+
+print(saldo)
