@@ -1,10 +1,12 @@
-tamanho_sequencia = int(input())
-sequencia = []
-sequencia[0] = 1
-sequencia[tamanho_sequencia] = 1
+n = int(input())
+seq = [int(input()) for _ in range(n)]
 
-for i in range(1, tamanho_sequencia):
-    sequencia[i] = int(input())
-    if sequencia[i]
+count = 1  # sempre podemos marcar o primeiro número
+last = seq[0]
 
-#INCOMPLETO
+for i in range(1, n):
+    if seq[i] != last:
+        count += 1
+        last = seq[i]
+
+print(count)
